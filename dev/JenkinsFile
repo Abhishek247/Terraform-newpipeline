@@ -1,5 +1,5 @@
 pipeline { 
-   agent {label 'pipeline'} 
+   agent {label 'terraform'} 
      stages { 
      	stage('Install_terraform') {
 		steps {
