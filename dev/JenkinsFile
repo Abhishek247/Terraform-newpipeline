@@ -9,14 +9,14 @@ pipeline {
 			sh "sudo mv terraform /usr/bin"
 			sh "sudo rm -rf terraform.zip"
 			sh "sudo rm -rf *.tf*"
-			sh "sudo rm -rf terraform_Jenkins"
+			sh "sudo rm -rf Terraform-newpipeline"
 			}
 		}
 	stage('Git Clone Terraform TF Files')
 	{
 		steps{
 			sh "git clone https://github.com/Abhishek247/Terraform-newpipeline.git"
-			sh "mv terraform_Jenkins/* $WORKSPACE"
+			sh "mv Terraform-newpipeline/* $WORKSPACE"
 			sh "ls -al"
 		}
 	}
