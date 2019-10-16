@@ -16,7 +16,7 @@ pipeline {
 	{
 		steps{
 			sh "git clone https://github.com/Abhishek247/Terraform-newpipeline.git"
-			sh "mv Terraform-newpipeline/* $WORKSPACE"
+			//sh "mv Terraform-newpipeline/* $WORKSPACE"
 			sh "ls -al"
 		}
 	}
